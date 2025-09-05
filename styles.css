@@ -10,28 +10,30 @@ body {
     justify-content: center;
     align-items: center;
     margin: 120px auto 0 auto;
-    min-width: none;
-    max-width: 450px;
+    width: 90%;          
+    max-width: 500px;     
     border-radius: 30px;
     border: 2px solid purple;
+    padding: 20px;
 }
 
 .heading {
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    width: 250px;
+    width: 100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #line {
-    width: 300px;
+    width: 100%;
     height: 2px;
     background-color: purple;
 }
 
 .bar {
-    width: 120px;
+    width: 130px;
     height: 8px;
     background-color: white;
     border-radius: 10px;
@@ -48,8 +50,8 @@ body {
     background-color: rgb(91, 52, 175);
     color: white;
     font-size: 25px;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -58,46 +60,50 @@ body {
 
 .input {
     margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 .input input {
-    width: 260px;
-    height: 25px; 
+    flex: 1;
+    height: 30px; 
     border: 1px solid rgb(91, 52, 175);
     border-radius: 5px;
+    padding: 5px;
 }
 .input button {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border: 1px solid rgb(91, 52, 175);
     color: white;
     border-radius: 50px;
     background-color: rgb(91, 52, 175);
+    flex-shrink: 0;
 }
 .input button:hover {
     background-color: blueviolet;
 }
 
 #clear {
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 80px;
     border: 1px solid rgb(91, 52, 175);
     border-radius: 50px;
     background-color: rgb(91, 52, 175);
     color: white;
-    margin: 10px auto;    
+    margin: 15px auto;    
 }
 #clear:hover {
     background-color: blueviolet;
 } 
 
+
 #task-container {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    min-width: 270px;
-    max-width: 400px;
+    width: 100%;
 }
 
 .task {
@@ -110,6 +116,7 @@ body {
     width: 100%;
     gap: 5px;
     padding: 5px;
+    background: rgb(223, 219, 224);
 }
 
 .text {
@@ -137,7 +144,7 @@ body {
     font-size: 20px;
 }
 .edit-btn {
-    color: rgb(126, 120, 109);
+    color: orange;
     font-size: 18px;
 }
 
@@ -145,4 +152,28 @@ button {
     cursor: pointer;
     background: none;
     border: none;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .stat {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .input input {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .check-btn, .delete-btn, .edit-btn {
+        font-size: 16px; 
+    }
 }
