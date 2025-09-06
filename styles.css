@@ -1,330 +1,184 @@
-<<<<<<< HEAD
 body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 120px auto 0 auto;
-    width: 90%;          
-    max-width: 500px;     
-    border-radius: 30px;
-    border: 2px solid purple;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 30px;
+  border: 2px solid purple;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.036);
 }
 
 .heading {
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #line {
-    width: 100%;
-    height: 2px;
-    background-color: purple;
+  width: 100%;
+  height: 2px;
+  background-color: purple;
 }
 
 .bar {
-    width: 130px;
-    height: 8px;
-    background-color: white;
-    border-radius: 10px;
+  width: 130px;
+  height: 8px;
+  background-color: white;
+  border-radius: 10px;
 }
 .progress {
-    width: 0px;
-    height: 8px;
-    background-color: rgb(91, 52, 175);
-    border-radius: 10px;
-    transition: all 0.3s ease;
+  width: 0px;
+  height: 8px;
+  background-color: rgb(91, 52, 175);
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .stat {
-    background-color: rgb(91, 52, 175);
-    color: white;
-    font-size: 25px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgb(91, 52, 175);
+  color: white;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 .input input {
-    flex: 1;
-    height: 30px; 
-    border: 1px solid rgb(91, 52, 175);
-    border-radius: 5px;
-    padding: 5px;
+  flex: 1;
+  height: 35px;
+  border: 1px solid rgb(91, 52, 175);
+  border-radius: 5px;
+  padding: 5px;
 }
 .input button {
-    height: 40px;
-    width: 40px;
-    border: 1px solid rgb(91, 52, 175);
-    color: white;
-    border-radius: 50px;
-    background-color: rgb(91, 52, 175);
-    flex-shrink: 0;
+  height: 45px;
+  width: 45px;
+  border: 1px solid rgb(91, 52, 175);
+  color: white;
+  border-radius: 50%;
+  background-color: rgb(91, 52, 175);
+  flex-shrink: 0;
 }
 .input button:hover {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 #clear {
-    height: 40px;
-    width: 80px;
-    border: 1px solid rgb(91, 52, 175);
-    border-radius: 50px;
-    background-color: rgb(91, 52, 175);
-    color: white;
-    margin: 15px auto;    
+  height: 30px;
+  width: 80px;
+  border: 1px solid rgb(91, 52, 175);
+  border-radius: 50px;
+  background-color: rgb(91, 52, 175);
+  color: white;
+  margin: 10px auto;
 }
 #clear:hover {
-    background-color: blueviolet;
-} 
+  background-color: blueviolet;
+}
 
 
 #task-container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .task {
-    border: 2px solid grey;
-    border-radius: 5px;  
-    margin-top: 5px;  
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    gap: 5px;
-    padding: 5px;
-    background: rgb(223, 219, 224);
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 5px;
+  padding: 5px;
+  background: rgb(220, 218, 221);
 }
 
 .text {
-    flex: 8;
-    padding: 5px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: left;
+  flex: 8;
+  padding: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
 }
 
 .edit-input {
-    flex: 8;
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 3px;
-    font-size: 14px;
+  flex: 8;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-size: 14px;
 }
 
 .check-btn {
-    color: green;
-    font-size: 20px;
+  color: green;
+  font-size: 20px;
 }
 .delete-btn {
-    color: rgb(217, 64, 64);
-    font-size: 20px;
+  color: rgb(217, 64, 64);
+  font-size: 20px;
 }
 .edit-btn {
-    color: orange;
-    font-size: 18px;
+  color: orange;
+  font-size: 18px;
 }
 
 button {
-    cursor: pointer;
-    background: none;
-    border: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 
 @media (max-width: 480px) {
-    .container {
-        width: 95%;
-        margin: 20px auto;
-        padding: 15px;
-    }
+  .container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
 
-    .stat {
-        width: 60px;
-        height: 60px;
-        font-size: 18px;
-    }
+  .stat {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
 
-    .input input {
-        width: 70%;
-        font-size: 14px;
-    }
-
-    .check-btn, .delete-btn, .edit-btn {
-        font-size: 16px; 
-    }
-}
-=======
-body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 120px auto 0 auto;
-    min-width: 300px;
-    max-width: 450px;
-    border-radius: 30px;
-    border: 2px solid purple;
-}
-
-.heading {
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    width: 250px;
-    justify-content: space-evenly;
-}
-
-#line {
-    width: 300px;
-    height: 2px;
-    background-color: purple;
-}
-
-.bar {
-    width: 120px;
-    height: 8px;
-    background-color: white;
-    border-radius: 10px;
-}
-.progress {
-    width: 0px;
-    height: 8px;
-    background-color: rgb(91, 52, 175);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.stat {
-    background-color: rgb(91, 52, 175);
-    color: white;
-    font-size: 25px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.input {
-    margin-top: 30px;
-}
-.input input {
-    width: 260px;
-    height: 25px; 
-    border: 1px solid rgb(91, 52, 175);
-    border-radius: 5px;
-}
-.input button {
-    height: 30px;
-    width: 30px;
-    border: 1px solid rgb(91, 52, 175);
-    color: white;
-    border-radius: 50px;
-    background-color: rgb(91, 52, 175);
-}
-.input button:hover {
-    background-color: blueviolet;
-}
-
-#clear {
-    height: 30px;
-    width: 100px;
-    border: 1px solid rgb(91, 52, 175);
-    border-radius: 50px;
-    background-color: rgb(91, 52, 175);
-    color: white;
-    margin: 10px auto;    
-}
-#clear:hover {
-    background-color: blueviolet;
-} 
-
-#task-container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin: ; */
-    min-width: 270px;
-    max-width: 400px;
-}
-
-.task {
-    border: 2px solid grey;
-    border-radius: 5px;  
-    margin-top: 5px;  
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    gap: 5px;
-    padding: 5px;
-}
-
-.text {
-    flex: 8;
-    padding: 5px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: left;
-}
-
-.edit-input {
-    flex: 8;
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 3px;
+  .input input {
     font-size: 14px;
-}
+  }
 
-.check-btn {
-    color: green;
-    font-size: 20px;
+  .check-btn,
+  .delete-btn,
+  .edit-btn {
+    font-size: 16px;
+  }
 }
-.delete-btn {
-    color: rgb(217, 64, 64);
-    font-size: 20px;
-}
-.edit-btn {
-    color: rgb(126, 120, 109);
-    font-size: 18px;
-}
-
-button {
-    cursor: pointer;
-    background: none;
-    border: none;
-}
->>>>>>> aceda4b1df5e990bd4196d1056f58a1eeabb9b9e
